@@ -1,5 +1,6 @@
 var path = require('path')
 var webpack = require('webpack')
+process.traceDeprecation = true;
 
 module.exports = {
   entry: './src/main.js',
@@ -14,6 +15,7 @@ module.exports = {
         test: /\.vue$/,
         loader: 'vue',
         options: {
+        
           // vue-loader options go here
         }
       },
